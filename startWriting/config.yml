@@ -6,7 +6,7 @@
 
 # この設定ファイルでサポートするRe:VIEWのバージョン番号。
 # major versionが違うときにはエラーを出す。
-review_version: 2.0
+review_version: 2.5
 
 # ほかの設定ファイルの継承を指定できる。同じパラメータに異なる値がある場合は、
 # 呼び出し元の値が優先される。
@@ -17,17 +17,18 @@ review_version: 2.0
 # inherit: ["A.yml", "B.yml"]
 
 # ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
-bookname: book
+bookname: startWriting
 # 記述言語。省略した場合はja
 language: ja
 
 # 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
-booktitle: Re:VIEWサンプル書籍
+booktitle: {name: "伝わる文章をはじめよう", file-as: "ツタワルブンショウヲハジメヨウ"}
+subtitle: {name: "基礎からトラブルシューティングまで", file-as: "キソカラトラブルシューティングマデ"}
 
 # 著者名。「, 」で区切って複数指定できる
 # 読みを入れる例 aut: [{name: "青木峰郎", file-as: "アオキミネロウ"}, {name: "武藤健志", file-as: "ムトウケンシ"}, {name: "高橋征義", file-as: "タカハシマサヨシ"}, {name: "角征典", file-as: "カドマサノリ"}]
-aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
+aut: [{name: "mochikoAsTech", file-as: "モチコアズテック"}]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -49,6 +50,7 @@ aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
 # a-csl, csl: 監修者
 # a-dsr, dsr: デザイナ
 # a-edt, edt: 編集者
+dsr: ["Hikaru Wakamatsu / Shinya Nagashio"]
 # a-ill, ill: イラストレータ
 # a-lyr, lyr: 歌詞作成者
 # a-mdc, mdc: メタデータセットの一次的責任者
@@ -57,7 +59,9 @@ aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
 # a-oth, oth: その他
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所）
+pbl: ["mochikoAsTech"]
 # a-prt, prt: 印刷所
+prt: ["日光企画"]
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
@@ -66,14 +70,15 @@ aut: ["青木峰郎", "武藤健志", "高橋征義", "角征典"]
 # a-trl, trl: 翻訳者
 
 # 刊行日(省略した場合は実行時の日付)
-date: 2019-02-07
+date: 2019-04-14
 # 発行年月。YYYY-MM-DD形式による配列指定。省略した場合はdateを使用する
 # 複数指定する場合は次のように記述する
 # [["初版第1刷の日付", "初版第2刷の日付"], ["第2版第1刷の日付"]]
 # 日付の後ろを空白文字で区切り、任意の文字列を置くことも可能。
-history: [["2019-02-07"]]
+history: [["2019-04-14 技術書典6版 v1.0.0"]]
 # 権利表記(配列で複数指定可)
 # rights: (C) 2016 Re:VIEW Developers
+rights: (C) 2018 mochikoAsTech
 # description: 説明
 # subject: 短い説明用タグ(配列で複数指定可)
 # type: 書籍のカテゴリーなど(配列で複数指定可)
@@ -86,7 +91,7 @@ history: [["2019-02-07"]]
 debug: null
 
 # 固有IDに使用するドメイン。指定しない場合には、時刻に基づくランダムUUIDが入る
-# urnid: urn:uid:http://example.com/book-title/
+urnid: urn:uid:https://github.com/mochikoAsTech/startWriting
 #
 # ISBN。省略した場合はurnidが入る
 # isbn: null
@@ -95,10 +100,10 @@ debug: null
 # htmlext: html
 #
 # CSSファイル(配列で複数指定可)
-stylesheet: ["style.css"]
+stylesheet: ["style.scss"]
 
 # ePUBのバージョン (2か3)
-# epubversion: 2
+epubversion: 3
 #
 # HTMLのバージョン (4か5。epubversionを3にしたときには5にする)
 # htmlversion: 4
@@ -109,7 +114,7 @@ toclevel: 3
 # 採番の設定。採番させたくない見出しには「==[nonum]」のようにnonum指定をする
 #
 # 本文でセクション番号を表示する見出しレベル
-secnolevel: 2
+secnolevel: 3
 
 # 以下のsecnolevelはまだ未実装。
 # 前付でセクション番号を表示する見出しレベル(未実装)
@@ -122,7 +127,7 @@ secnolevel: 2
 # part_secnolevel: 1
 
 # 本文中に目次ページを作成するか。省略した場合はnull (作成しない)
-# toc: true
+toc: true
 
 # EPUB2標準の目次(NCX)以外に物理目次ファイルを作成するか。省略した場合はnull (作成しない)
 # ePUB3においてはこの設定によらず必ず作成される
@@ -132,7 +137,7 @@ secnolevel: 2
 # cover: null
 #
 # 表紙に配置し、書籍の影絵にも利用する画像ファイル。省略した場合はnull (画像を使わない)。画像ディレクトリ内に置いてもディレクトリ名は不要(例: cover.jpg)
-coverimage: cover.jpg
+#coverimage: cover.jpg
 #
 # 表紙の後に大扉ページを作成するか。省略した場合はtrue (作成する)
 # titlepage: true
@@ -188,7 +193,7 @@ coverimage: cover.jpg
 # page_metric: [40,80,40,80,2]
 
 # ページ送りの送り方向、page-progression-directionの値("ltr"|"rtl"|"default")
-# direction: "ltr"
+direction: "ltr"
 
 # EPUBのOPFへの固有の追加ルール
 # <package>要素に追加する名前空間
@@ -325,4 +330,6 @@ pdfmaker:
   # 奥付を作成するか。trueを指定するとデフォルトの奥付、ファイル名を指定するとそれがcolophon.htmlとしてコピーされる
   colophon: true
   # pdfmaker:階層を使うものはここまで
+webmaker:
+    stylesheet: ["style.css","style-web.css"]
 

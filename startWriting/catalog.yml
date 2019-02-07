@@ -1,9 +1,21 @@
+
 PREDEF:
+# はじめに
+  - introduction.re
 
 CHAPS:
+# AWSをやめたくなったらすること
   - startWriting.re
 
+# 寄稿
+#  - startTechBookFest.re
+
 APPENDIX:
+# ぎゅっと言えないトゥインクル
+#  - cantSayTightlytwinkle.re
 
 POSTDEF:
-
+# あとがき
+  - postscript.re
+# 執筆者一覧
+  - contributors.re
