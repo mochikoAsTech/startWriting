@@ -4,11 +4,8 @@ PREDEF:
   - introduction.re
 
 CHAPS:
-# AWSをやめたくなったらすること
+# 伝わる文章をはじめよう
   - startWriting.re
-
-# 寄稿
-#  - startTechBookFest.re
 
 APPENDIX:
 # ぎゅっと言えないトゥインクル
