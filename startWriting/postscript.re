@@ -16,9 +16,10 @@ mochikoAsTech
 == Special Thanks:
 
  * ミルクティー色で折れ耳のゆるふわ愛され猫
- * Ayaka Chikamoto（進捗管理してくれる美人のマネージャ兼売り子）
+ * Ayaka Chikamoto
  * Miho Sunada 
  * Masao Takado
+ * 湊川あい
 
 === レビュアー
 

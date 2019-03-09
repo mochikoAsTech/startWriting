@@ -36,6 +36,10 @@ rules:
     pattern:  例えば
   - expected: つたえる
     pattern:  伝える
+  - expected: 聞き手
+    pattern:  聴講者
+  - expected: よい
+    pattern:  良い
   - expected: 読者
     pattern:  読み手
   - expected: 言わ
