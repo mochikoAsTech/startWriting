@@ -1,7 +1,0 @@
-version: '3'
-services:
-  review:
-    volumes:
-      - .:/startWriting
-    build: .
-    working_dir: /startWriting

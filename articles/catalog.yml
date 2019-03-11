@@ -1,0 +1,22 @@
+
+PREDEF:
+# はじめに
+  - introduction.re
+
+CHAPS:
+# 技術を文章で分かりやすくつたえる
+  - writing.re
+
+# 技術を登壇で分かりやすくつたえる
+  - presentation.re
+
+# 教わり上手をはじめよう
+  - beTaught.re
+
+APPENDIX:
+
+POSTDEF:
+# あとがき
+  - postscript.re
+# 執筆者一覧
+  - contributors.re
