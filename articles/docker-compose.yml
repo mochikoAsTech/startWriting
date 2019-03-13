@@ -2,6 +2,6 @@ version: '3'
 services:
   review:
     volumes:
-      - .:/startWriting_tmp
+      - .:/startWriting
     build: .
-    working_dir: /startWriting_tmp
+    working_dir: /startWriting
