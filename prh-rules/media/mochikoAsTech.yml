@@ -38,6 +38,8 @@ rules:
     pattern:  伝える
   - expected: 聞き手
     pattern:  聴講者
+  - expected: わかり
+    pattern:  分かり
   - expected: よい
     pattern:  良い
   - expected: 読者
