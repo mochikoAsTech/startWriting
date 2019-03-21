@@ -23,7 +23,7 @@ language: ja
 
 # 書名
 booktitle: {name: "技術をつたえるテクニック", file-as: "ギジュツヲツタエルテクニック"}
-subtitle: {name: "技術書執筆から登壇までをサポート", file-as: "ギジュツショシッピツカラトウダンマデヲサポート"}
+subtitle: {name: "わかりやすい書き方・話し方", file-as: "ワカリヤスイカキカタ・ハナシカタ"}
 
 # 著者名。「, 」で区切って複数指定できる
 aut: [{name: "mochikoAsTech", file-as: "モチコアズテック"}]
