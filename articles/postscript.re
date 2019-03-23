@@ -28,6 +28,7 @@ mochikoAsTech
 == Special Thanks:
 
  * 旦那様と息子とねこたち
+ * Shinya Nagashio
  * Ayaka Chikamoto
  * Miho Sunada 
  * Masao Takado
