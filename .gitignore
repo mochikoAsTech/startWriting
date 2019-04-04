@@ -10,4 +10,4 @@ articles/*.xml
 articles/*.txt
 
 # レビューの間のみPDFも管理対象にする
-!articles/startWriting.pdf
+#!articles/startWriting.pdf
